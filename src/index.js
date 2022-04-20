@@ -26,7 +26,7 @@ document.getElementById("app").innerHTML = `
 
   const res = await fetch('./data/covid.csv')
   const csv = await res.text();
-  const resp = await fetch('../data/states-population.json')
+  const resp = await fetch('./data/states-population.json')
   const statesPopulation = await resp.json();
   roundOne();
 
